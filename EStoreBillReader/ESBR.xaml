@@ -11,7 +11,7 @@
         WindowStyle="None"
         ResizeMode="CanResizeWithGrip"
         BorderThickness="1"
-        BorderBrush="Gray"
+        BorderBrush="Gray"        
         FontSize="18"
         Height="649"
         Width="1022"
