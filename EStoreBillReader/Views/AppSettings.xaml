@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="EStoreBillReader.Views.AppSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:EStoreBillReader.Views"
+             mc:Ignorable="d"
+             FontSize="18"
+             d:DesignHeight="574"
+             d:DesignWidth="852">
+  <Grid>
+    <TextBlock Text="Database Location:"
+               Margin="45.5,23,0,0"
+               HorizontalAlignment="Left"
+               Width="155.75"
+               Height="36.5"
+               VerticalAlignment="Top" />
+    <TextBox x:Name="DBLocation"
+             HorizontalAlignment="Left"
+             Height="30"
+             Margin="45.5,54.5,0,0"
+             Text="TextBox"
+             VerticalAlignment="Top"
+             Width="407.5"
+             Background="#33D8E3E6"
+             Foreground="#FF5B5656"
+             BorderBrush="#FF595959"
+             MinHeight="30"
+             MaxLines="1"
+             AutomationProperties.HelpText="Database Location" />
+    <Button x:Name="browseBtn"
+            Style="{StaticResource StandardButton}"
+            Content="..."
+            FontSize="20"
+            Width="35"
+            Height="32"
+            Margin="475.5,53.523,0,0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            FontWeight="Bold"
+            Click="browseBtn_Click" />
+  </Grid>
+</UserControl>

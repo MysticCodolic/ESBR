@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EStoreBillReader.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CheckCanc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DirPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\Production\PDF to DBF Data\Files</Value>
+    </Setting>
+    <Setting Name="Provider" Type="System.String" Scope="User">
+      <Value Profile="(Default)">VFPOLEDB.1</Value>
+    </Setting>
+    <Setting Name="MonthYear" Type="System.String" Scope="User">
+      <Value Profile="(Default)">082019</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

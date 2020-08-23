@@ -1,0 +1,37 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Custom="clr-namespace:EStoreBillReader.Custom" x:Class="EStoreBillReader.Views.PdfReaderView"
+             mc:Ignorable="d"
+             Initialized="UserControl_Initialized"
+             FontSize="18"
+             d:DesignHeight="574"  Background="AliceBlue"
+             d:DesignWidth="852">
+    <Grid>
+        <Button x:Name="Convert_btn" HorizontalAlignment="Right" Width="150" Height="60" VerticalAlignment="Top" Margin="0,54,30,0" Style="{StaticResource StandardButton}"
+            Content="Auto Convert" FontSize="20" FontWeight="Bold" Click="Convert_btn_Click" />
+        <RichTextBox  Margin="45.5,163,399,75" Background="#CCFFFFFF" FontSize="16">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="View_textbx" Text="" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox  Margin="0,163,30,75" HorizontalAlignment="Right" FontSize="16" Width="347.5" Background="#CCFFFFFF">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="Result_textbx" Text="" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <StackPanel Margin="0,0,29,45" HorizontalAlignment="Right" Width="181" Height="25" VerticalAlignment="Bottom" Orientation="Horizontal" FlowDirection="RightToLeft">
+            <ProgressBar x:Name="PBar" Width="100" Height="10" Margin="5,0,0,0" FlowDirection="LeftToRight" Foreground="#FF06C825" />
+            <TextBlock x:Name="PBarTxt" TextWrapping="Wrap" SizeChanged="PBarTxt_SizeChanged" Text="" Margin="8,0,0,0" />
+        </StackPanel>
+        <Custom:ToggleButton x:Name="checkCanc" Checked="True" HorizontalAlignment="Left" TextSide="Right" Height="35" Margin="46,58,0,0"  Text="Skip Cancelled" VerticalAlignment="Top" Width="182"/>
+        <Button x:Name="Manual_btn" HorizontalAlignment="Right" Width="150" Height="60" VerticalAlignment="Top" Margin="0,54,192,0" Style="{StaticResource StandardButton}"
+            Content="Manual Enter" FontSize="20" FontWeight="Bold" Click="Manual_btn_Click" />
+    </Grid>
+</UserControl>

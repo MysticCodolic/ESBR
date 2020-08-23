@@ -1,0 +1,73 @@
+﻿<Window xmlns:Custom="clr-namespace:EStoreBillReader.Custom"
+             x:Class="EStoreBillReader.Views.ManualEntry"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" ResizeMode="NoResize"
+             mc:Ignorable="d" FontSize="18" SizeToContent="WidthAndHeight">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="1" 
+                  ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" >
+                <Grid Height="95.75">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Invoice Nunber:" Margin="45,10.577,0,0" Typography.Capitals="SmallCaps" HorizontalAlignment="Left" Height="36.5" VerticalAlignment="Top" />
+                    <TextBox HorizontalAlignment="Left" MaxLength="25" Height="30" Margin="45,46.25,0,0" VerticalAlignment="Top" Width="225" 
+                      Background="#33D8E3E6"  Foreground="#FF5B5656" BorderBrush="#FF595959" MinHeight="30" MaxLines="1" AutomationProperties.HelpText="Database Location" />
+                    <TextBlock Text="Invoice Date:" Grid.Column="1" Typography.Capitals="SmallCaps" Margin="45,10.577,0,0" HorizontalAlignment="Left" Height="36.5" VerticalAlignment="Top" />
+                    <Custom:DateTextBox HorizontalAlignment="Left" Grid.Column="1" MaxLength="10" Height="30" Margin="45,46.25,0,0" VerticalAlignment="Top"
+                              Width="130" Background="#33D8E3E6" Foreground="#FF5B5656" BorderBrush="#FF595959" MinHeight="30" MaxLines="1"
+                              AutomationProperties.HelpText="Database Location" />
+                </Grid>
+                <Grid Height="95.75">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Estore:" Margin="45,10.577,0,0" Typography.Capitals="SmallCaps" HorizontalAlignment="Left" Height="36.5" VerticalAlignment="Top" />
+                    <ComboBox Name="Estore_cmb" HorizontalAlignment="Left"  Height="30" Margin="45,46.25,0,0" VerticalAlignment="Top" Width="225" 
+                      Background="#33D8E3E6"  Foreground="#FF5B5656" BorderBrush="#FF595959" MinHeight="30"  AutomationProperties.HelpText="Database Location" />
+                    <TextBlock Text="Invoice Date:" Grid.Column="1" Typography.Capitals="SmallCaps" Margin="45,10.577,0,0" HorizontalAlignment="Left" Height="36.5" VerticalAlignment="Top" />
+                    <Custom:DateTextBox HorizontalAlignment="Left" Grid.Column="1" MaxLength="10" Height="30" Margin="45,46.25,0,0" VerticalAlignment="Top"
+                              Width="130" Background="#33D8E3E6" Foreground="#FF5B5656" BorderBrush="#FF595959" MinHeight="30" MaxLines="1"
+                              AutomationProperties.HelpText="Database Location" />
+                </Grid>
+
+                <TextBlock Text="Estore:" Margin="45,25,0,0" Typography.Capitals="SmallCaps" HorizontalAlignment="Left" Height="36.5" />
+                <ComboBox IsEditable="True" />
+                <ComboBox />
+                <TextBlock Text="Taxrate:" Margin="45,25,0,0" Typography.Capitals="SmallCaps" HorizontalAlignment="Left" Height="36.5" />
+                <TextBox HorizontalAlignment="Left" MaxLength="25" Height="30" Margin="45,0,0,0" VerticalAlignment="Top" Width="407.5" Background="#33D8E3E6"
+                 Foreground="#FF5B5656" BorderBrush="#FF595959" MinHeight="30" MaxLines="1" AutomationProperties.HelpText="Database Location" />
+                <TextBlock Text="Database Location:" Margin="45,25,0,0" Typography.Capitals="SmallCaps" HorizontalAlignment="Left" Width="155.75" Height="36.5" />
+                <TextBox HorizontalAlignment="Left" MaxLength="25" Height="30" InputMethod.InputScope="1234567890" Margin="45,0,0,0" VerticalAlignment="Top"
+                 Width="407.5" Background="#33D8E3E6" Foreground="#FF5B5656" BorderBrush="#FF595959" MinHeight="30" MaxLines="1" AutomationProperties.HelpText="Database Location" />
+                <TextBlock Text="Database Location:" Margin="45,25,0,0" Typography.Capitals="SmallCaps" HorizontalAlignment="Left" Width="155.75" Height="36.5" />
+                <TextBox HorizontalAlignment="Left" MaxLength="25" Height="30" Margin="45,0,0,0" VerticalAlignment="Top" Width="407.5" Background="#33D8E3E6"
+                 Foreground="#FF5B5656" BorderBrush="#FF595959" MinHeight="30" MaxLines="1" AutomationProperties.HelpText="Database Location" />
+                <TextBlock Text="Database Location:" Typography.Capitals="SmallCaps" Margin="45,25,0,0" HorizontalAlignment="Left" Width="155.75" Height="36.5" />
+                <TextBox HorizontalAlignment="Left" MaxLength="25" Height="30" Margin="45,0,0,0" VerticalAlignment="Top" Width="407.5" Background="#33D8E3E6" 
+                 Foreground="#FF5B5656" BorderBrush="#FF595959" MinHeight="30" MaxLines="1" AutomationProperties.HelpText="Database Location" />
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
